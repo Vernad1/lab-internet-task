@@ -1,0 +1,51 @@
+.thirdBlock {
+  color: var(--black);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-right: 32px;
+}
+
+.leftTitle {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 18px;
+}
+
+.leftText {
+  font-size: 16px;
+  line-height: 28px;
+  color: #5e646a;
+}
+
+.rightImage {
+  width: 100%;
+}
+
+.rightImage img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    text-align: center;
+  }
+}

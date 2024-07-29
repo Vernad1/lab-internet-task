@@ -1,0 +1,34 @@
+.container {
+  color: var(--black);
+  padding: 0 20px;
+  background-color: #f6f8fa;
+}
+
+.respondentsInner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 68px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.respondentsitemTitle {
+  margin-bottom: 17px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.respondentsItemText {
+  font-size: 16px;
+  line-height: 28px;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .respondentsInner {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

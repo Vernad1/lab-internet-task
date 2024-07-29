@@ -1,0 +1,43 @@
+.primary,
+.secondary {
+  width: fit-content;
+  padding: 20px 40px;
+  border-radius: 4px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  transition: background linear 0.1s;
+}
+
+.primary {
+  color: var(--white);
+  background: var(--primary);
+}
+
+.primary:hover {
+  cursor: pointer;
+  background: var(--primary-hover);
+}
+
+.secondary {
+  color: var(--black);
+  background: var(--light-gray);
+  border: 1px solid var(--light-gray);
+}
+
+.secondary:hover {
+  cursor: pointer;
+  background: var(--white);
+  border: 1px solid var(--mid-gray);
+}
+
+.disabled {
+  background: var(--primary-disabled);
+}
+
+.primary.disabled:hover,
+.secondary.disabled:hover {
+  background: var(--primary-disabled);
+
+  cursor: pointer;
+}

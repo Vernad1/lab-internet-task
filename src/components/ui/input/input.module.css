@@ -1,0 +1,60 @@
+.inputContainer input {
+  width: 100%;
+  min-height: 64px;
+  border: 1px solid hsl(0, 0%, 67%);
+  border-radius: 5px;
+  padding: 25px 16px 4px 16px;
+  font-size: 18px;
+  line-height: 32px;
+  background-color: transparent;
+  background-color: var(--extralight-gray);
+  border: 1px solid var(--extralight-gray);
+
+  /*label */
+}
+
+.inputContainer {
+  position: relative;
+  width: 100%;
+  min-height: 64px;
+}
+
+.inputContainer label {
+  color: var(--dark-gray);
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  /* z-index: -1; */
+  padding: 0 2px;
+  transition: 0.2s;
+}
+
+.inputContainer input:focus {
+  outline: none;
+}
+
+.inputContainer input:focus + label,
+.inputContainer input:not(:placeholder-shown) + label {
+  top: 17px;
+  font-size: 14px;
+  z-index: 1;
+}
+
+.errorText + input {
+  border: 2px solid var(--dangerous);
+}
+.inputContainer input:focus {
+  background-color: var(--white);
+  border: 2px solid var(--mid-gray);
+}
+
+.inputContainer .errorText + input:focus {
+  border: 2px solid var(--dangerous);
+}
+
+.errorText {
+  position: absolute;
+  top: 64px;
+  color: var(--dangerous);
+}

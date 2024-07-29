@@ -1,0 +1,105 @@
+.menu {
+  position: fixed;
+  display: none;
+  color: var(--black);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  z-index: -1;
+  background-color: var(--white);
+  transition: opacity 0.2s linear;
+}
+
+.menuHeader {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menuLogo {
+  padding: 0 16px;
+}
+
+.logo {
+  display: flex;
+}
+
+.logoImage {
+  width: 37px;
+  height: 24px;
+  margin-right: 9px;
+}
+
+.logoImage img {
+  width: 100%;
+  height: 100%;
+}
+
+.menuLink {
+  padding-top: 16px;
+  margin: 0 16px 16px 16px;
+  border-top: 1px solid var(--light-gray);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menuLink a {
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--gray);
+}
+
+.linkRow {
+  width: 10px;
+  height: 10px;
+  border-bottom-right-radius: 2px;
+  border-right: 2px solid var(--gray);
+  border-bottom: 2px solid var(--gray);
+  transform: rotateY(0deg) rotate(315deg); /* notice the order */
+}
+
+.menuLink:last-child {
+  border-bottom: 1px solid var(--light-gray);
+  margin-bottom: 0;
+  padding-bottom: 16px;
+}
+
+.menuCloseButton {
+  height: 62px;
+  width: 62px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menuCloseButton::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  width: 22px;
+  height: 2px;
+  background-color: var(--black);
+  transform: rotateY(180deg) rotate(45deg); /* notice the order */
+}
+
+.menuCloseButton::after {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  width: 22px;
+  height: 2px;
+  background-color: var(--black);
+  transform: rotateY(180deg) rotate(-45deg); /* notice the order */
+}
+
+.isOpen {
+  opacity: 1;
+  z-index: 1;
+  display: block;
+}

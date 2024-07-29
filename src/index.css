@@ -1,0 +1,61 @@
+:root {
+  font-family: "Graphik", "sans-serif";
+
+  line-height: 1.5;
+  font-weight: 400;
+
+  --primary: #2a6cea;
+  --primary-hover: #397dff;
+  --primary-disabled: #abcae6;
+  --green-succes: #25cd82;
+  --dangerous: #f13636;
+  --black: #191c1f;
+  --dark-gray: #5e646a;
+  --gray: #83898f;
+  --mid-gray: #c2c8cd;
+  --light-gray: #eceff2;
+  --extralight-gray: #f6f8fa;
+  --white: #fff;
+
+  color: var(--white);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+li,
+ul {
+  list-style: none;
+}
