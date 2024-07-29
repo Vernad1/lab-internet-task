@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./review.module.css";
+import defaultAvatar from "../../assets/images/reviews/default-avatar.svg";
 
 interface ReviewProps {
   userReview: {
@@ -17,13 +18,9 @@ export const Review: React.FC<ReviewProps> = ({ userReview }) => {
       <div className={style.reviewInfo}>
         <div className={style.infoAvatar}>
           <img
-            src={
-              userReview.imageUrl
-                ? userReview.imageUrl
-                : "/src/assets/images/reviews/default-avatar.svg"
-            }
+            src={userReview.imageUrl ? userReview.imageUrl : defaultAvatar}
             alt="review-avatar"
-          />
+          ></img>
         </div>
         <div className={style.reviewReviewer}>
           <div className={style.reviewerName}>{userReview.userName}</div>

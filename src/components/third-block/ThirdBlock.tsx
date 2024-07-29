@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./thirdBlock.module.css";
+import thirdBlockImage from "../../assets/images/third-block-image.png";
 
 export const ThirdBlock: React.FC = () => {
   return (
@@ -18,10 +19,7 @@ export const ThirdBlock: React.FC = () => {
         </div>
         <div className={style.right}>
           <div className={style.rightImage}>
-            <img
-              src="/src/assets/images/third-block-image.png"
-              alt="third-block-logo"
-            />
+            <img src={thirdBlockImage} alt="third-block-logo" />
           </div>
         </div>
       </div>

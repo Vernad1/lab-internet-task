@@ -25,7 +25,7 @@
 .swiper-rtl .swiper-button-prev {
   left: auto !important;
   right: 10px !important;
-  background-image: url("/public/images/swiper/fi-sr-angle-right.svg") !important;
+  background-image: url("../../assets/images/swiper/fi-sr-angle-right.svg") !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: 32px 32px !important;
@@ -40,7 +40,7 @@
 .swiper-rtl .swiper-button-next {
   right: auto !important;
   left: 32px !important;
-  background-image: url("/public/images/swiper/fi-sr-angle-left.svg") !important;
+  background-image: url("../../assets/images/swiper/fi-sr-angle-left.svg") !important;
 
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -90,7 +90,7 @@
 
 @media screen and (max-width: 800px) {
   .swiper {
-    padding-left: 2% !important;
+    padding-left: 4px !important;
   }
 
   .swiper-pagination-bullet {
@@ -115,7 +115,7 @@
   }
 }
 
-@media screen and (max-width: 374px) {
+@media screen and (max-width: 420px) {
   .swiper {
     width: 337px !important;
   }

@@ -9,8 +9,9 @@ export const Questions: React.FC = () => {
     <section className={style.questions} id="questions">
       <div className={style.container}>
         <h2 className={style.questionsTittle}>Вопросы и ответы</h2>
-        {questions.map((question) => (
+        {questions.map((question, index) => (
           <Accordion
+            key={index}
             text={question.answer}
             title={question.question}
           ></Accordion>

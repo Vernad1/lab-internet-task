@@ -29,7 +29,7 @@ export const Menu: React.FC<MenuProps> = ({ items, closeMenu, isOpen }) => {
         </div>
         <ul>
           {items.map((item) => (
-            <li className={style.menuLink} onClick={closeMenu}>
+            <li key={item.value} className={style.menuLink} onClick={closeMenu}>
               <a href={item.href}>{item.value}</a>
               <div className={style.linkRow}></div>
             </li>

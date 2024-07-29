@@ -1,5 +1,9 @@
 import React from "react";
 import style from "./about.module.css";
+import truckImage from "../../assets/images/about/delivery-truck.svg";
+import moneyImage from "../../assets/images/about/money-bags.svg";
+import secureImage from "../../assets/images/about/secure.svg";
+import waitingImage from "../../assets/images/about/waiting.svg";
 
 export const About: React.FC = () => {
   return (
@@ -9,10 +13,7 @@ export const About: React.FC = () => {
 
         <div className={style.aboutInner}>
           <div className={style.aboutItem}>
-            <img
-              src="/src/assets/images/about/delivery-truck.svg"
-              alt="about-logo"
-            />
+            <img src={waitingImage} alt="about-logo" />
             <div className={style.aboutInfo}>
               <div className={style.aboutItemText}>
                 Прочитай задание внимательно
@@ -24,10 +25,7 @@ export const About: React.FC = () => {
           </div>
 
           <div className={style.aboutItem}>
-            <img
-              src="/src/assets/images/about/delivery-truck.svg"
-              alt="about-logo"
-            />
+            <img src={truckImage} alt="about-logo" />
             <div className={style.aboutInfo}>
               <div className={style.aboutItemText}>
                 Изучи весь макет заранее
@@ -40,7 +38,7 @@ export const About: React.FC = () => {
           </div>
 
           <div className={style.aboutItem}>
-            <img src="/src/assets/images/about/secure.svg" alt="about-logo" />
+            <img src={secureImage} alt="about-logo" />
             <div className={style.aboutInfo}>
               <div className={style.aboutItemText}>Сделай хорошо</div>
               <div className={style.aboutItemSuptext}>
@@ -50,10 +48,7 @@ export const About: React.FC = () => {
           </div>
 
           <div className={style.aboutItem}>
-            <img
-              src="/src/assets/images/about/money-bags.svg"
-              alt="about-logo"
-            />
+            <img src={moneyImage} alt="about-logo" />
             <div className={style.aboutInfo}>
               <div className={style.aboutItemText}>Получи предложение</div>
               <div className={style.aboutItemSuptext}>
